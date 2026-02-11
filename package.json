@@ -25,6 +25,7 @@
 		"lint:ci": "eslint --cache --cache-strategy content",
 		"prepack": "nr build",
 		"prepare": "simple-git-hooks",
+		"release": "bumpp",
 		"typecheck": "tsc --noEmit"
 	},
 	"simple-git-hooks": {
