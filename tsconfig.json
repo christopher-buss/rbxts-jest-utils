@@ -1,0 +1,6 @@
+{
+	"extends": "@isentinel/tsconfig/roblox",
+	"compilerOptions": {
+		"declaration": true
+	}
+}

@@ -1,0 +1,55 @@
+{
+	"name": "@rbxts/jest-utils",
+	"version": "0.1.0",
+	"description": "A collection of utilities that can be used alongside roblox Jest",
+	"keywords": ["roblox", "roblox-ts", "jest", "testing"],
+	"homepage": "https://github.com/christopher-buss/rbxts-jest-utils",
+	"license": "MIT",
+	"author": "Christopher Buss <christopher.buss@pm.me> (https://github.com/christopher-buss)",
+	"sideEffects": false,
+	"type": "module",
+	"exports": {
+		".": "./out/init.luau",
+		"./package.json": "./package.json"
+	},
+	"main": "./out/init.luau",
+	"module": "./out/init.luau",
+	"types": "./out/index.d.ts",
+	"files": ["out", "!out/**/*.tsbuildinfo"],
+	"scripts": {
+		"build": "rbxtsc",
+		"lint": "eslint --cache",
+		"lint:ci": "eslint --cache --cache-strategy content",
+		"prepack": "nr build",
+		"prepare": "simple-git-hooks",
+		"typecheck": "tsc --noEmit"
+	},
+	"simple-git-hooks": {
+		"pre-commit": "pnpm lint-staged"
+	},
+	"lint-staged": {
+		"*": "eslint --fix --cache --no-warn-ignored",
+		"*.ts": ["sh -c 'tsc --noEmit'"]
+	},
+	"devDependencies": {
+		"@antfu/ni": "catalog:dev",
+		"@isentinel/eslint-config": "catalog:lint",
+		"@isentinel/tsconfig": "catalog:tsc",
+		"@rbxts/compiler-types": "catalog:dev",
+		"@rbxts/jest-globals": "catalog:test",
+		"@rbxts/luau-polyfill": "catalog:dev",
+		"@rbxts/types": "catalog:dev",
+		"bumpp": "catalog:cli",
+		"eslint": "catalog:lint",
+		"eslint-plugin-pnpm": "catalog:lint",
+		"jiti": "catalog:script",
+		"lint-staged": "catalog:lint",
+		"roblox-ts": "catalog:dev",
+		"simple-git-hooks": "catalog:lint",
+		"typescript": "catalog:tsc"
+	},
+	"peerDependencies": {
+		"@rbxts/jest-globals": "*"
+	},
+	"packageManager": "pnpm@10.29.2+sha512.bef43fa759d91fd2da4b319a5a0d13ef7a45bb985a3d7342058470f9d2051a3ba8674e629672654686ef9443ad13a82da2beb9eeb3e0221c87b8154fff9d74b8"
+}
