@@ -4,6 +4,10 @@
 	"description": "A collection of utilities that can be used alongside roblox Jest",
 	"keywords": ["roblox", "roblox-ts", "jest", "testing"],
 	"homepage": "https://github.com/christopher-buss/rbxts-jest-utils",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/christopher-buss/rbxts-jest-utils"
+	},
 	"license": "MIT",
 	"author": "Christopher Buss <christopher.buss@pm.me> (https://github.com/christopher-buss)",
 	"sideEffects": false,
