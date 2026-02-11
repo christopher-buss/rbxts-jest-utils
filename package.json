@@ -9,7 +9,10 @@
 	"sideEffects": false,
 	"type": "module",
 	"exports": {
-		".": "./out/init.luau",
+		".": {
+			"types": "./out/index.d.ts",
+			"default": "./out/init.luau"
+		},
 		"./package.json": "./package.json"
 	},
 	"main": "./out/init.luau",
