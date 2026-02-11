@@ -1,6 +1,6 @@
 {
 	"name": "@rbxts/jest-utils",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A collection of utilities that can be used alongside roblox Jest",
 	"keywords": ["roblox", "roblox-ts", "jest", "testing"],
 	"homepage": "https://github.com/christopher-buss/rbxts-jest-utils",
