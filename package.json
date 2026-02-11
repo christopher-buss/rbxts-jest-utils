@@ -28,7 +28,7 @@
 		"pre-commit": "pnpm lint-staged"
 	},
 	"lint-staged": {
-		"*": "eslint --fix --cache --no-warn-ignored",
+		"*": "pnpm exec eslint --fix --cache --no-warn-ignored",
 		"*.ts": ["sh -c 'tsc --noEmit'"]
 	},
 	"devDependencies": {
