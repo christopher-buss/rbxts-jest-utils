@@ -16,11 +16,13 @@ catalogs:
     "@rbxts/types": ^1.0.906
     roblox-ts: ^3.0.0
   lint:
-    "@isentinel/eslint-config": ^4.7.10
+    "@isentinel/eslint-config": ^5.0.0-beta.5
     eslint: ^9.39.2
     eslint-plugin-pnpm: ^1.5.0
     lint-staged: ^16.2.7
     simple-git-hooks: ^2.13.1
+  prod:
+    type-fest: ^5.4.4
   script:
     jiti: ^2.6.1
   test:

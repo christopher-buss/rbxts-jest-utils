@@ -2,8 +2,16 @@
 	"name": "@rbxts/jest-utils",
 	"version": "0.1.1",
 	"description": "A collection of utilities that can be used alongside roblox Jest",
-	"keywords": ["roblox", "roblox-ts", "jest", "testing"],
+	"keywords": [
+		"roblox",
+		"roblox-ts",
+		"jest",
+		"testing"
+	],
 	"homepage": "https://github.com/christopher-buss/rbxts-jest-utils",
+	"bugs": {
+		"url": "https://github.com/christopher-buss/rbxts-jest-utils/issues"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/christopher-buss/rbxts-jest-utils"
@@ -22,7 +30,10 @@
 	"main": "./out/init.luau",
 	"module": "./out/init.luau",
 	"types": "./out/index.d.ts",
-	"files": ["out", "!out/**/*.tsbuildinfo"],
+	"files": [
+		"out",
+		"!out/**/*.tsbuildinfo"
+	],
 	"scripts": {
 		"build": "rbxtsc",
 		"lint": "eslint --cache",
@@ -37,7 +48,12 @@
 	},
 	"lint-staged": {
 		"*": "pnpm exec eslint --fix --cache --no-warn-ignored",
-		"*.ts": ["sh -c 'tsc --noEmit'"]
+		"*.ts": [
+			"sh -c 'tsc --noEmit'"
+		]
+	},
+	"dependencies": {
+		"type-fest": "catalog:prod"
 	},
 	"devDependencies": {
 		"@antfu/ni": "catalog:dev",
