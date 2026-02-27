@@ -1,6 +1,6 @@
 {
 	"name": "@rbxts/jest-utils",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "A collection of utilities that can be used alongside roblox Jest",
 	"keywords": [
 		"roblox",
